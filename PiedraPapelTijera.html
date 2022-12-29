@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>  
+        <title>PIEDRA, PAPEL O TIJERA</title>
+        <script>
+        let jugador = 0
+        let PC = 2
+
+        //1 es piedra, 2 es papel, 3 es tijera
+        jugador = prompt("Elije un numero para jugar: 1 es piedra, 2 es papel y 3 es tijera")
+        //alert("Elejiste "+ jugador)
+        if (jugador == 1){
+            alert ("Elegiste piedra🪨")
+        }
+        else if (jugador == 2){
+            alert("Elegiste papel🧻 ")
+        }
+        else if (jugador == 3){
+            alert("elegiste tijera✂️")
+        }
+        else{
+            alert(" You are stupid?")
+        }
+        //Elección del pc
+        if (PC == 1){
+            alert ("PC eligó piedra🪨")
+        }
+        else if (PC == 2){
+            alert("PC eligió papel🧻 ")
+        }
+        else if (PC == 3){
+            alert("PC eligió tijera✂️")
+        }
+        else{
+            alert(" cometí una equivocación al programar la elección del PC, una disculpa")
+        }
+        //Decidiendo ganador
+        if(jugador == PC){
+            alert("EMPATAN😒")
+        }
+        else if(jugador == 1 && PC == 3 || jugador == 2 && PC == 1 || jugador == 3 && PC == 2){
+            alert("GANASTE😍")
+        }
+        else{
+            alert("PERDISTE😩")
+        }
+        </script>
+    </head>
+
+    <body>
+        <H1> <strong>PIEDRA, PAPEL O TIJERA</strong></H1>
+
+    </body>
+</html>
